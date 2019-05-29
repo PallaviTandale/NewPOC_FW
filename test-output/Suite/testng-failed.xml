@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <parameter name="url" value="http://zero.webappsecurity.com/login.html"/>
+  <test thread-count="5" name="TestOnChrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="retailBanking.TC.SmokeTest">
+        <methods>
+          <include name="t_02_check_transfer_funds" invocation-numbers="0"/>
+          <include name="t_01_check_login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- retailBanking.TC.SmokeTest -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
